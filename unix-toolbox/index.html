@@ -213,12 +213,12 @@
     O The runlevel atual pode ser alterado com o <code>init</code>. Por exemplo, para ir do 3 para o 5:
     <pre># init 5                             <span class="cmt"># Entra o runlevel 5</span></pre>
     <ul style="list-style-type:none; page-break-inside:avoid;">
-      <li>0       Shutdown and halt(encerrar e desligar)</li>
-      <li>1       Modo Single-User (também S: Não inicia as daemons, ou seja, serviços)</li>
-      <li>2       Multi-user sem rede</li>
-      <li>3       Multi-user com rede</li>
-      <li>5       Multi-user com X</li>
-      <li>6       Reboot</li>
+      <li>0       Shutdown and halt(encerrar e desligar)</li>
+      <li>1       Modo Single-User (também S: Não inicia as daemons, ou seja, serviços)</li>
+      <li>2       Multi-user sem rede</li>
+      <li>3       Multi-user com rede</li>
+      <li>5       Multi-user com X</li>
+      <li>6       Reboot</li>
     </ul>
     (Nota do tradutor: Não foi mencionado o valor de número 4, porém não é aconselhado utilizá-lo, pois esse valor não tem definição por se tratar de uso somente para propósitos especiais.)
     <ul>
@@ -247,11 +247,11 @@
     </pre>
     O processo <code>init</code> pode também ser usado para alcançar um dos níveis estados de seguintes. Por exemplo <code># init 6</code> para reboot.
     <ul style="list-style-type:none; page-break-inside:avoid;">
-      <li>0       parar (Halt) e desligar (power off) (signal <code>USR2</code>)</li>
-      <li>1       Vai para modo single-user (signal <code>TERM</code>)</li>
-      <li>6       Reinicia a máquina (signal <code>INT</code>)</li>
-      <li>c       Bloqueia logins futuros (signal <code>TSTP</code>)</li>
-      <li>q       Reverificar o ttys(5) file (signal <code>HUP</code>)</li>
+      <li>0       parar (Halt) e desligar (power off) (signal <code>USR2</code>)</li>
+      <li>1       Vai para modo single-user (signal <code>TERM</code>)</li>
+      <li>6       Reinicia a máquina (signal <code>INT</code>)</li>
+      <li>c       Bloqueia logins futuros (signal <code>TSTP</code>)</li>
+      <li>q       Reverificar o ttys(5) file (signal <code>HUP</code>)</li>
     </ul>
     <h3>Windows</h3>
     Inicia e para um serviço ou com o <code>service name</code> ou com <code>"service description"</code> (exibe o Painel de Controle de Serviços) como se segue:
@@ -442,11 +442,11 @@
     </pre>
     Sinais importantessão:
     <ul style="list-style-type: none;">
-      <li>1       <code>HUP</code> (hang up)</li>
-      <li>2       <code>INT</code> (interrupt)</li>
-      <li>3       <code>QUIT</code> (quit)</li>
-      <li>9       <code>KILL</code> (non-catchable, non-ignorable kill)</li>
-      <li>15     <code>TERM</code> (software termination signal)</li>
+      <li>1       <code>HUP</code> (hang up)</li>
+      <li>2       <code>INT</code> (interrupt)</li>
+      <li>3       <code>QUIT</code> (quit)</li>
+      <li>9       <code>KILL</code> (non-catchable, non-ignorable kill)</li>
+      <li>15     <code>TERM</code> (software termination signal)</li>
     </ul>
 
     </div>
@@ -1039,10 +1039,10 @@
     </pre>
     Opções adicionais importação:
     <ul style="list-style-type: none;">
-      <li><code>-A</code>     Printa cada pacote em texto limpo (sem cabeçalho)</li>
-      <li><code>-X</code>     Printa pacotes em hex e ASCII</li>
-      <li><code>-l</code>     Faz linha de saída (stdout)em buffer</li>
-      <li><code>-D</code>     Printa todas a interfaces disponíveis</li>
+      <li><code>-A</code>     Printa cada pacote em texto limpo (sem cabeçalho)</li>
+      <li><code>-X</code>     Printa pacotes em hex e ASCII</li>
+      <li><code>-l</code>     Faz linha de saída (stdout)em buffer</li>
+      <li><code>-D</code>     Printa todas a interfaces disponíveis</li>
     </ul>
 
     No Windows usa windump a partir <a rel="nofollow" href="http://www.winpcap.org/">www.winpcap.org</a>. Use o windump -D para listar as interfaces.
@@ -1417,15 +1417,15 @@
     </pre>
     Algumas opções importantes:
     <ul style="list-style-type: none;">
-      <li><code>-a, --archive</code>       modo de arquivação (archive mode); o mesmo que -rlptgoD (sem -H)</li>
-      <li><code>-r, --recursive</code>       recursivo dentro dos diretórios</li>
-      <li><code>-R, --relative</code>       utiliza nomes de caminhos relativos</li>
-      <li><code>-H, --hard-links</code>       preserva os hard links</li>
-      <li><code>-S, --sparse</code>       manipula eficientemente arquivos dispersos</li>
-      <li><code>-x, --one-file-system</code>       não ultrapassa os limites do file system</li>
-      <li><code> --exclude=PATTERN</code>       exclui combinações PATTERN (PADRÃO) de arquivos</li>
-      <li><code> --delete-during</code>       receiver exclui durante o xfer, não antes</li>
-      <li><code> --delete-after</code>       receiver exclui depois de transferir, não antes</li>
+      <li><code>-a, --archive</code>       modo de arquivação (archive mode); o mesmo que -rlptgoD (sem -H)</li>
+      <li><code>-r, --recursive</code>       recursivo dentro dos diretórios</li>
+      <li><code>-R, --relative</code>       utiliza nomes de caminhos relativos</li>
+      <li><code>-H, --hard-links</code>       preserva os hard links</li>
+      <li><code>-S, --sparse</code>       manipula eficientemente arquivos dispersos</li>
+      <li><code>-x, --one-file-system</code>       não ultrapassa os limites do file system</li>
+      <li><code> --exclude=PATTERN</code>       exclui combinações PATTERN (PADRÃO) de arquivos</li>
+      <li><code> --delete-during</code>       receiver exclui durante o xfer, não antes</li>
+      <li><code> --delete-after</code>       receiver exclui depois de transferir, não antes</li>
     </ul>
 
     <h2 id="winrsync">Rsync no Windows</h2>
@@ -1982,15 +1982,15 @@
     <pre># less unixtoolbox.xhtml</pre>
     Alguns comandos importantes são (^N representa o [control]-[N]):
     <ul style="list-style-type: none;">
-      <li><strong>h  H</strong>       boa ajuda na exibição</li>
-      <li><strong>f  ^F  ^V  SPAÇO</strong>       Avança uma janela (ou N de linhas).</li>
-      <li><strong>b  ^B  ESC-v</strong>       Volta uma janela (ou N de linhas).</li>
-      <li><strong>F</strong>       Avança eternamente; como o "tail -f".</li>
-      <li><strong>/parametro</strong>       Procura por (N-th) linha marcada.</li>
-      <li><strong>?parametro</strong>       Procura por (N-th) linha marcada.</li>
-      <li><strong>n</strong>       Repete busca anterior (ou N-th localização).</li>
-      <li><strong>N</strong>       Repete busca anterior em direção reversa.</li>
-      <li><strong>q</strong>       sai</li>
+      <li><strong>h  H</strong>       boa ajuda na exibição</li>
+      <li><strong>f  ^F  ^V  SPAÇO</strong>       Avança uma janela (ou N de linhas).</li>
+      <li><strong>b  ^B  ESC-v</strong>       Volta uma janela (ou N de linhas).</li>
+      <li><strong>F</strong>       Avança eternamente; como o "tail -f".</li>
+      <li><strong>/parametro</strong>       Procura por (N-th) linha marcada.</li>
+      <li><strong>?parametro</strong>       Procura por (N-th) linha marcada.</li>
+      <li><strong>n</strong>       Repete busca anterior (ou N-th localização).</li>
+      <li><strong>N</strong>       Repete busca anterior em direção reversa.</li>
+      <li><strong>q</strong>       sai</li>
     </ul>
 
 
@@ -1999,32 +1999,32 @@
     Os editores <code>nano</code> e <code>pico</code> estão geralmente disponíveis também e são mais fáceis (IMHO) de usar.
     <h3>Sair (Quit)</h3>
     <ul style="list-style-type: none;">
-      <li><strong>:w</strong> newfilename       salva o arquivo em com o nome de newfilename</li>
-      <li><strong>:wq or :x</strong>       salva e sai</li>
-      <li><strong>:q!</strong>       sai sem salvar</li>
+      <li><strong>:w</strong> newfilename       salva o arquivo em com o nome de newfilename</li>
+      <li><strong>:wq or :x</strong>       salva e sai</li>
+      <li><strong>:q!</strong>       sai sem salvar</li>
     </ul>
     <h3>Buscar e mover</h3>
     <ul style="list-style-type: none;">
-      <li><strong>/string</strong>       Busca por string para frente</li>
-      <li><strong>?string</strong>       Volta por string para tras</li>
-      <li><strong>n</strong>       Busca pela próxima instancia de string</li>
-      <li><strong>N</strong>       Busca por instancia de instring anterior</li>
-      <li><strong>{</strong>       Move um paragrafo para tras</li>
-      <li><strong>}</strong>       Move um paragrafo para frente</li>
-      <li><strong>1G</strong>       Move para a primeira linha do arquivo</li>
-      <li><strong>nG</strong>       Move para o n th de linha do arquivo</li>
-      <li><strong>G</strong>       Move para a ultima ultima linha do arquivo</li>
-      <li><strong>:%s/OLD/NEW/g</strong>       Busca e substitui toda a ocorrencia</li>
+      <li><strong>/string</strong>       Busca por string para frente</li>
+      <li><strong>?string</strong>       Volta por string para tras</li>
+      <li><strong>n</strong>       Busca pela próxima instancia de string</li>
+      <li><strong>N</strong>       Busca por instancia de instring anterior</li>
+      <li><strong>{</strong>       Move um paragrafo para tras</li>
+      <li><strong>}</strong>       Move um paragrafo para frente</li>
+      <li><strong>1G</strong>       Move para a primeira linha do arquivo</li>
+      <li><strong>nG</strong>       Move para o n th de linha do arquivo</li>
+      <li><strong>G</strong>       Move para a ultima ultima linha do arquivo</li>
+      <li><strong>:%s/OLD/NEW/g</strong>       Busca e substitui toda a ocorrencia</li>
     </ul>
     <h3>Excluir, copiare colar text</h3>
     <ul style="list-style-type: none;">
-      <li><strong>dd (dw)</strong>       Corta linha corrente (palavra)</li>
-      <li><strong>D</strong>       Cut to the end of the line</li>
-      <li><strong>x</strong>       Delete (cut) character</li>
-      <li><strong>yy (yw)</strong>       Copy line (word) after cursor</li>
-      <li><strong>P</strong>       Paste after cursor</li>
-      <li><strong>u</strong>       Desfaz a ultima modificação</li>
-      <li><strong>U</strong>       Desfaz todas as alterações até a linha atual</li>
+      <li><strong>dd (dw)</strong>       Corta linha corrente (palavra)</li>
+      <li><strong>D</strong>       Cut to the end of the line</li>
+      <li><strong>x</strong>       Delete (cut) character</li>
+      <li><strong>yy (yw)</strong>       Copy line (word) after cursor</li>
+      <li><strong>P</strong>       Paste after cursor</li>
+      <li><strong>u</strong>       Desfaz a ultima modificação</li>
+      <li><strong>U</strong>       Desfaz todas as alterações até a linha atual</li>
     </ul>
 
     <h2 id="mail">mail</h2>
@@ -2086,9 +2086,9 @@
     </pre>
     Opções importantes:
     <ul style="list-style-type: none;">
-      <li><code>notrunc</code>       não trunca a saída do arquivo, todos os zeros serão escrtidos como zeros.</li>
-      <li><code>noerror</code>       continua depois da leitura de erros (ex. bad blocks)</li>
-      <li><code>sync</code>       Enche todo bloco de entrada com Nulls para ibs-size</li>
+      <li><code>notrunc</code>       não trunca a saída do arquivo, todos os zeros serão escrtidos como zeros.</li>
+      <li><code>noerror</code>       continua depois da leitura de erros (ex. bad blocks)</li>
+      <li><code>sync</code>       Enche todo bloco de entrada com Nulls para ibs-size</li>
     </ul>
     O tamanho de byte padrão é de 512 (um bloco). O MBR, aonde a tabela de partição fica localizada, fica no primeiro bloco, os primeiros 63 blocos de um disco ficam vazios. Tamanhos maiores de byte são mais raídos para copiar mas requer também mais memória.
     <h3>Backup e restaurção</h3>
@@ -2177,12 +2177,12 @@
     <h2 id="find">Find</h2>
     Algumas opções importantes:
     <ul style="list-style-type: none;">
-      <li><code>-x</code> (on BSD) <code>-xdev</code> (no Linux)       Permanece no mesmo sistema de arquivo (dev em fstab).</li>
-      <li><code>-exec cmd {} \;</code>       Executa o comando e substitui {} pelo caminho completo</li>
-      <li><code>-iname</code>       Como o -name mas é case sensitive</li>
-      <li><code>-ls</code>       Exibe informações a respeito do arquivo (como ls -la)</li>
-      <li><code>-size n</code>       n é +-n (k M G T P)</li>
-      <li><code>-cmin n</code>       Status de arquivo que foi alterado pela última vez em n de minutes atras.</li>
+      <li><code>-x</code> (on BSD) <code>-xdev</code> (no Linux)       Permanece no mesmo sistema de arquivo (dev em fstab).</li>
+      <li><code>-exec cmd {} \;</code>       Executa o comando e substitui {} pelo caminho completo</li>
+      <li><code>-iname</code>       Como o -name mas é case sensitive</li>
+      <li><code>-ls</code>       Exibe informações a respeito do arquivo (como ls -la)</li>
+      <li><code>-size n</code>       n é +-n (k M G T P)</li>
+      <li><code>-cmin n</code>       Status de arquivo que foi alterado pela última vez em n de minutes atras.</li>
     </ul>
     <pre># find . -type f ! -perm -444        <span class="cmt"># Encontra arquivos não legíveis por todos</span>
     # find . -type d ! -perm -111        <span class="cmt"># Encontra diretórios não acessíveis por todos</span>
@@ -2559,11 +2559,11 @@
     <div id="shells"><h1><a>Shells</a></h1>
     Muitas distribuições Linux utilizam o shell bash enquanto os BSDs utilizam o tcsh, o bourne shell é utilizado somente para scripts. Filtros são muito uteis e pode ser canalizados:
     <ul style="list-style-type:none;">
-      <li><code>grep</code>   Parametro de combinação</li>
-      <li><code>sed</code>   Busca e substitui strings ou caracteres</li>
-      <li><code>cut</code>   Imprime colunas específicas a partir de um marcador</li>
-      <li><code>sort</code>   Ordena alfabeticamente ou numericamente</li>
-      <li><code>uniq</code>   Remove linhas duplicadas de um arquivo</li>
+      <li><code>grep</code>   Parametro de combinação</li>
+      <li><code>sed</code>   Busca e substitui strings ou caracteres</li>
+      <li><code>cut</code>   Imprime colunas específicas a partir de um marcador</li>
+      <li><code>sort</code>   Ordena alfabeticamente ou numericamente</li>
+      <li><code>uniq</code>   Remove linhas duplicadas de um arquivo</li>
     </ul>
     Utilizados todos de uma so vez por exemplo:
     <pre># ifconfig | sed 's/  / /g' | cut -d" " -f1 | uniq | grep -E "[a-z0-9]+" | sort -r
@@ -2631,16 +2631,16 @@
     </pre>
     O modo do emacs abilita para uso das chaves de atalhos do emacs para modificar o prompt de linha de comando. Isso é extremamente útil (não somente para usuários do emacs). O comandos mais utilizados são:
     <ul style="list-style-type:none;">
-      <li>C-a       Move o cursor para o inicio da linha</li>
-      <li>C-e       Move o cursor para o final da linha</li>
-      <li>M-b       Move o cursor uma palavra de volta</li>
-      <li>M-f       Move o cursor uma palavra a frente</li>
-      <li>M-d       Corta a próxima palavra</li>
-      <li>C-w       Corta a ultima palavra</li>
-      <li>C-u       Corta tudo antes do cursor</li> 
-      <li>C-k       Corta tudo depois do cursor (o resto da linha)</li>
-      <li>C-y       Cola a ultima coisa cortada (simplesmente cola)</li>
-      <li>C-_       Desfaz</li>
+      <li>C-a       Move o cursor para o inicio da linha</li>
+      <li>C-e       Move o cursor para o final da linha</li>
+      <li>M-b       Move o cursor uma palavra de volta</li>
+      <li>M-f       Move o cursor uma palavra a frente</li>
+      <li>M-d       Corta a próxima palavra</li>
+      <li>C-w       Corta a ultima palavra</li>
+      <li>C-u       Corta tudo antes do cursor</li> 
+      <li>C-k       Corta tudo depois do cursor (o resto da linha)</li>
+      <li>C-y       Cola a ultima coisa cortada (simplesmente cola)</li>
+      <li>C-_       Desfaz</li>
     </ul>
     <i>Nota:</i> C- = precione control, M- = precione meta (que geralmente é o alt ou a tecla escape).
     </div>
@@ -2937,7 +2937,8 @@
     <!-- <div class="pb"> -->
 
     <div class="footerlast">
-    This document: "Unix Toolbox revisão 14.4" está licenciada sob a <a rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Licence [Attribution - Share Alike]</a>. © <a href="mailto:c_at_cb.vu">Colin Barschel</a> 2007-2012. Alguns direitos reservados. Traduzido por Gabriel da Silveira Costa.
+    This document: "Unix Toolbox revisão 14.4" está licenciada sob a <a rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Licence [Attribution - Share Alike]</a>. © <a href="mailto:c_at_cb.vu">Colin Barschel</a> 2007-2012. Alguns direitos reservados. Traduzido para o Português do Brasil por Gabriel da Silveira Costa. Revisado por: Rumbler Soppa https://github.com/rumbler, Gabriel Almir (kewer) https://github.com/gabrielalmir10 e agora temos dois novos integrantes na equipe, o Gabriel Masson https://github.com/gmasson e o Tiago Alvez https://github.com/cegohub/. O Gabriel Masson criou um fork dessa documentação https://github.com/gmasson/caixaDeFerramentasDoUnix assim também como o Tiago alves criou o seu https://github.com/cegohub/caixaDeFerramentasDoUnix. Desta forma, todas as melhorias e correções serão emergidas nessa documentação, formando assim, a versão atual (uma ótima ideia que o Gabriel Masson teve).
+######Cinco pessoas das quais sou muito grato pelo andamento do projeto.
     </div>
 
   </body>
